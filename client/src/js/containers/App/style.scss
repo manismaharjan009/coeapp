@@ -1,0 +1,122 @@
+header{
+  .logo{
+    width:100%;
+    margin: 10px;
+    float: left;
+    background: url('/assets/images/logo.svg');
+    background-color: rgba(255, 255, 255, 0.2);
+    background-size: 40px;
+    background-repeat: no-repeat;
+    padding-left: 45px;
+    font-size: 20px;
+    text-transform: uppercase;
+    a {
+      text-decoration: none;
+      h1{
+        font-size: 30px;
+        text-decoration: none;
+        font-weight: lighter;
+        margin: 0 0 0 10px;
+        color: #555;
+      }
+    }
+  }
+  
+  nav{
+    float:left;
+    a{
+      padding:10px;
+      margin:10px;
+      border:1px dotted gray;
+      display:inline-block; 
+      text-decoration:none;
+      border-radius:5px;
+    }
+  }
+}
+
+.greeting{
+  color: #fff;
+  padding: 10px 24px;
+  white-space: nowrap;
+}
+
+/* main{
+  float:left;
+  display:block;
+  width:100%; 
+  border-top:1px solid #ccc;
+  h1{
+    font-weight: normal;
+  }
+}
+ */
+.ant-layout-header .trigger {
+  font-size: 18px;
+  line-height: 64px;
+  padding: 0 24px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.ant-pro-sider-menu-logo {
+  position: relative;
+  height: 64px;
+  padding-left: 24px;
+  overflow: hidden;
+  line-height: 64px;
+  background: #001529;
+  transition: all .3s;
+
+  h1 {
+   display: inline-block;
+   margin: 0 0 0 12px;
+   color: #fff;
+   font-weight: 600;
+   font-size: 20px;
+   vertical-align: middle;
+ }
+}
+
+.ant-menu-item a {
+  color: #fff;
+}
+
+.ant-layout-header{
+  background: #fff;
+  padding: 0;
+  position: fixed;
+  z-index: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.ant-layout-sider-collapsed{
+  .minor-menu{
+    margin-left: auto;
+  }
+}
+
+.minor-menu{
+  padding-right: 24px;
+  margin-right: 200px;
+  margin-left: auto;
+  
+  &.sider-collapsed{
+    margin: 0 0 0 auto;
+  }
+
+  .ant-menu-horizontal{
+    border-bottom: 0;
+  }
+  
+  .ant-menu-item{
+
+    a{
+      span{
+        display: none;
+      }
+    }
+  }
+}

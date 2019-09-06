@@ -1,0 +1,20 @@
+.form-center {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #1ba39c;
+  
+  .login-form{
+    padding: 20px 20px 0 20px;
+    background: #fff;
+  }
+
+  .login-form-forgot {
+    float: right;
+  }
+
+  .login-form-button {
+    width: 100%;
+  }
+}

@@ -1,0 +1,39 @@
+.previous{
+  background: rgba(108, 122, 137, 1);
+}
+
+.current {
+  background: #16a085;
+}
+
+.upcoming{
+  background: rgba(241, 90, 34, 1)
+}
+
+.btm-spacing{
+  margin-bottom: 24px;
+}
+
+.top-spacing{
+  margin-top: 24px;
+}
+
+.calendar{
+  width: 100%;
+  min-width: 265px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+
+  .ant-card-body{
+    padding: 0;
+  }
+
+  .ant-fullcalendar-header{
+    padding: 11px 0px 0px 0;
+    text-align: center;
+
+    > div {
+      padding-bottom: 11px;
+    }
+  }
+}

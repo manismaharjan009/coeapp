@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='/assets/images/logo.png' />
+  <link rel="manifest" href="manifest.json">
+  <!-- Tell the browser it's a PWA -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <!-- Tell iOS it's a PWA -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <!-- Make sure theme-color is defined -->
+  <meta name="theme-color" content="#536878">
+  <title>COE-App</title>
+  <style>
+    /* inline style for quick first paint */
+    .flash-paint {
+      opacity: 1;
+      color: #666;
+      justify-content: center;
+      align-items: center;
+      height: 90vh;
+      display: flex;
+      flex-direction: column;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    }
+
+    .flash-paint h1 {
+      background: #a7c024;
+      color: white;
+      padding: 20px;
+      border-radius: 10px;
+      font-size: 40px;
+      margin: 0;
+    }
+
+    .flash-paint h2 {
+      font-weight: normal;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Open Sans", Arial;
+      color: #666;
+      font-size: 16px;
+    }
+
+    noscript {
+      font-weight: normal;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, "Open Sans", Arial;
+      color: #666;
+      color: red;
+      position: fixed;
+      bottom: 120px;
+      text-align: center;
+      width: 100vw;
+      left: 0;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div id="root">
+    <div class="flash-paint">
+      <h1>COE App</h1>
+      <h2> Application loading... </h2>
+    </div>
+    <noscript>Javascript is disabled. This application requires javascript enabled to run.</noscript>
+  </div>
+</body>
+
+</html>

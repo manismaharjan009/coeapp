@@ -1,0 +1,61 @@
+@import './fonts.css';
+body{
+  background: whitesmoke;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  &.fontOpenSansLoaded{
+    font-family: "Open Sans";
+    color: #575757;
+  }
+  // initially hide all fontawesome icons
+  i.fab{
+    visibility: hidden;
+  }
+  // show fontawesomeicon once the font is floaded
+  &.fontAwesomeLoaded{
+    i.fab{
+      visibility: visible;
+    } 
+  }
+}
+
+// Floats
+.pull-left            { float: left!important; }
+.pull-right           { float: right !important; }
+.clearfix{
+  &:before,&:after    { content: " "; display: table; }
+  &:after             { clear: both; }
+}
+// Alignment
+.text-left           { text-align: left; }
+.text-right          { text-align: right; }
+.text-center         { text-align: center; }
+.text-justify        { text-align: justify; }
+.text-nowrap         { white-space: nowrap; }
+
+// Transformation
+.text-lowercase      { text-transform: lowercase; }
+.text-uppercase      { text-transform: uppercase; }
+.text-capitalize     { text-transform: capitalize; }
+
+
+// Toggling content
+.show                { display: block !important; }
+.invisible           { visibility: hidden; }
+.hidden              { display: none !important; }
+
+.list-inline {
+  list-style: none;
+  margin-left: -5px;
+  padding-left: 0;
+  
+  li{ display: inline-block; padding-left: 5px; padding-right: 5px;}
+}
+
+
+#root,
+.main-layout,
+#root > .ant-spin-nested-loading,
+#root > .ant-spin-nested-loading > .ant-spin-container{
+  height: 100%;
+}

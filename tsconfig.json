@@ -1,0 +1,39 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./client/src/",
+    "outDir": "dist/", // path to output directory
+    // "module": "commonjs", // esnext
+    "module": "esnext", // esnext
+    "target": "es6", // Target latest version of ECMAScript.
+    "lib": ["es6", "dom"],
+    "sourceMap": true,
+    "allowJs": true,
+    "jsx": "react",
+    "moduleResolution": "node", // Search under node_modules for non-relative imports.    
+    "rootDir": "client/src",
+    "allowSyntheticDefaultImports": true, // Allow default imports
+    "esModuleInterop": true, //  helpers for runtime babel ecosystem compatibility 
+    "forceConsistentCasingInFileNames": true,
+    "strict": true, // Enable strictest settings like strictNullChecks & noImplicitAny.
+    "strictNullChecks": true, // enable strict null checks as a best practice
+    "suppressImplicitAnyIndexErrors": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "skipLibCheck": true,
+    "noImplicitAny": true,
+    "types": ["node"],
+    "paths": { 
+      "*": ["types/*", "./client/node_modules/@types/*"] 
+    },
+  },
+  "awesomeTypescriptLoaderOptions": {
+    "errorsAsWarnings": true
+  },
+  "include": ["./client/src/**/*"],
+  "exclude": ["node_modules", "test/*", "dist", "server","./client/src/registerServiceWorker.ts"],
+  "plugin": [
+    {
+      "name": "typescipt-tslint-plugin"
+    }
+  ]
+}

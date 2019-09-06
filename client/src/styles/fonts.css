@@ -1,0 +1,12 @@
+/* open sans self hosted styles */
+@font-face {
+  font-family: 'Open Sans';
+  src: url('/assets/fonts/opensans/OpenSans-Regular.eot'); /* IE9*/
+  src: url('/assets/fonts/opensans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('/assets/fonts/opensans/OpenSans-Regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('/assets/fonts/opensans/OpenSans-Regular.woff') format('woff'), /* Pretty Modern Browsers */
+       url('/assets/fonts/opensans/OpenSans-Regular.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('/assets/fonts/opensans/OpenSans-Regular.svg#opensans') format('svg'); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "tslint:latest",
+    "tslint-react",
+    "tslint-config-prettier"
+  ],
+  "linterOptions": {
+    "exclude": [
+      "config/**/*.js",
+      "node_modules/**/*.ts",
+      "coverage/lcov-report/*.js"
+    ]
+  },
+  "rules": {
+    "member-ordering": [true, { "order": "fields-first" }],
+    "variable-name": [true, "ban-keywords", "check-format", "allow-leading-underscore", "allow-pascal-case"],
+    "interface-name": [false, "always-prefix"],
+    "no-empty-interface": false,
+    "ordered-imports": false,
+    "interface-over-type-literal": true,
+    "no-console": [false],
+    "object-literal-sort-keys": false,
+    "member-access": [true, "no-public"]
+  }
+}
+
+// https://github.com/mthomes/react-redux-saga-typescript/blob/master/tslint.json
